@@ -1,0 +1,8 @@
+{
+  "name": "appzero",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "ecfb5ae0"
+}

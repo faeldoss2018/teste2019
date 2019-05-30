@@ -1,0 +1,93 @@
+
+<ion-content >
+    
+  <ion-slides paginationClickable=true
+              initialSlide=0
+              loop=true
+              autoplay=1000
+              speed=2000
+              #mySlider>
+
+    <ion-slide *ngFor="let item of elenco">
+      
+        <img src="{{item.img}}">
+           <ion-item color="dark">
+            {{item.fala}} 
+           </ion-item>
+        
+              
+        
+                   
+    </ion-slide>
+
+    
+
+  </ion-slides>
+
+<!--<ion-content>
+      <ion-slides paginationClickable=true
+                  initialSlide=0
+                  loop=true
+                  autoplay=80
+                  speed=10
+                  #mySlider>
+    
+        <ion-slide *ngFor="let item of elenco">
+          
+            
+            <ion-item color="dark">
+                {{item.fala}} 
+              </ion-item>
+                        
+            
+             
+        </ion-slide>
+           
+    
+      </ion-slides> 
+     
+    </ion-content> -->
+   
+
+
+
+    <ion-button class="swiper-button-next" (click)="slideNext()"  color="dark"></ion-button>
+    
+</ion-content>
+
+
+
+
+
+
+ <!-- <ion-footer>
+    
+  
+        <ion-toolbar style="background-color:blue;">
+          
+          <ion-title  paginationClickable=true
+          initialSlide=0
+          loop=true
+          autoplay=80
+          speed=10
+          #mySlider>  
+            
+           <div class="swiper-button-next" (click)="slideNext()"></div> 
+             <div class="swiper-button-prev" (click)="slidePrev()"></div>  
+          
+             <ion-text color="secondary" >
+          
+            
+               
+                  <h3 *ngFor="let item of elenco"><ion-item color="primary">
+                      {{item.fala}} 
+                    </ion-item></h3>
+                  
+              </ion-text>          
+              
+      
+              
+          </ion-title>
+        </ion-toolbar>
+      </ion-footer> -->
+
